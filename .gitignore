@@ -1,44 +1,13 @@
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
-/Ejemplo/nbproject/private/
-/Tema02_Reto_ElCreadorDePersonajes/nbproject/private/
-/Tema02/Tema02_Reto_ElCreadorDePersonajes/nbproject/private/
-/Tema02/Tema02_Reto_ElCreadorDePersonajes/build/
-/Tema02/Tema02_Reto_ElCreadorDePersonajes/dist/
-/Tema03/JavaApplication16/nbproject/private/
-/Tema03/JavaApplication16/build/
-/Tema03/Tema03_Teoria/nbproject/private/
-/Tema03/Tema03_Ejercicio01/nbproject/private/
 /Tema03/Tema03_Ejercicio01/build/
-/Tema03/Tema03_Ejercicio02/nbproject/private/
+/Tema03/Tema03_Ejercicio01/nbproject/private/
 /Tema03/Tema03_Ejercicio02/build/
-/Tema03/Tema03_Ejercicio03/nbproject/private/
+/Tema03/Tema03_Ejercicio02/nbproject/private/
 /Tema03/Tema03_Ejercicio03/build/
-/Tema03/Tema03_Ejercicio04/nbproject/private/
+/Tema03/Tema03_Ejercicio03/nbproject/private/
 /Tema03/Tema03_Ejercicio04/build/
-/Tema03/Tema03_Ejercicio05/nbproject/private/
+/Tema03/Tema03_Ejercicio04/nbproject/private/
 /Tema03/Tema03_Ejercicio05/build/
-/Tema03/Tema03_Ejercicio06/nbproject/private/
+/Tema03/Tema03_Ejercicio05/nbproject/private/
 /Tema03/Tema03_Ejercicio06/build/
+/Tema03/Tema03_Ejercicio06/nbproject/private/
+/Tema03/Tema03_Teoria/nbproject/private/
