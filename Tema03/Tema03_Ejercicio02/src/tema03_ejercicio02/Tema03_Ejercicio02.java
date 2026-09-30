@@ -21,18 +21,19 @@ public class Tema03_Ejercicio02 {
         System.out.println("Ahora, introduzca el segundo número: ");
         int num2 = numeros.nextInt();
         
-        int producto = 0;
-        int suma = 0;
+        int producto;
+        int suma;
         
         if(num1 > 10){
             producto = num1 * num2;
+            System.out.println("La operación que se realizó es producto "
+                    + "y el resultado es: " + producto);
         }
         else{
             suma = num1 + num2;
+            System.out.println("La operación que se realizó es suma "
+                    + "y el resultado es: " + suma);
         }
-        
-        System.out.println("La operación que se realizó es " +
-                " y el resultado es: " + ;
     }
     
 }
