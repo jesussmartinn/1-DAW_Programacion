@@ -14,12 +14,9 @@ public class Tema03_Ejercicio11 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int i = 1;
-        int num = 1;
         
-        for(i=1; i<=6; i++){
-            System.out.println("Hola" + num);
-            num++;
+        for(int i=1; i<=6; i++){
+            System.out.println("Hola" + i);            
         }
     }
     

@@ -14,7 +14,7 @@ public class Tema03_Ejercicio10 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int i = 0;
+        int i;
         
         for(i=0; i<5; i++){
             System.out.println("Hola");

@@ -14,17 +14,15 @@ public class Tema03_Ejercicio13 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //Declaro e inicializo la variable
         int i = 11;
         
-        while(i >= 11 && i <= 133){
+        //Hago el bucle para que salgan los números pares entre 11 y 133
+        while(i < 133){
             if(i % 2 == 0){
                 System.out.println(i);
-                i++;
             }
-            else{
-                i++;
-            }
+            i++;
         }
     }
-    
 }

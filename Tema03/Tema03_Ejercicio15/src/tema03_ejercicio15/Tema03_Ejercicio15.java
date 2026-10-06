@@ -16,10 +16,12 @@ public class Tema03_Ejercicio15 {
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
         
+        //Declaramos las variables y recogemos por teclado el numero que nos proporciona el cliente
         System.out.println("Introduzca un número para calcular su tabla de multiplicar: ");
         int n = num.nextInt();
         int i;
         
+        //Realizo el bucle para mostrar las operaciones correctas
         for(i = 0; i <= 10; i++){
             System.out.println( n + " * " + i + " = " + n * i);
         }
