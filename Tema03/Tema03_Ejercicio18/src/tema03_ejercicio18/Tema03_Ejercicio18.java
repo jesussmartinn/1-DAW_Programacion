@@ -16,21 +16,24 @@ public class Tema03_Ejercicio18 {
     public static void main(String[] args) {
         Scanner contrasena = new Scanner(System.in);
         
-        int i = 0;
         int contrCorrecta = 1234;
-        int contr;
+        int intento;
+        int numIntentos = 0;
         
         do{
             System.out.println("Escriba la contraseña de 4 dígitos: ");
-            contr = contrasena.nextInt();
+            intento = contrasena.nextInt();
             
-            if(i > 3 || contr != contrCorrecta){
-                System.out.println("Error");
-            }else{
-                System.out.println("Enhorabuena");
-            }
+            numIntentos++;
             
-        }while(i > 3 || contr != contrCorrecta);
+        }while(numIntentos < 3 && intento != contrCorrecta);
+        
+        //Compruebo si acertó o agotó los intentos
+        if(intento == contrCorrecta){
+            System.out.println("Enhorabuena, has acertado la contraseña");
+        }
+        else{
+            System.out.println("Error, has agotado el límite de intentos");
+        }
     }
-    
 }
