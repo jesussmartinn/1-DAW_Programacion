@@ -35,10 +35,9 @@ public class Tema03_Ejercicio32 {
         int edadMeses = mesActual - mesNac;
         int edadDias = diaActual - diaNac;
 
-        // Ajuste en caso de que los días o meses sean negativos
+        // Ajuste en caso de que los días, meses o años sean negativos
         if (edadDias < 0) {
             System.out.println("ERROR");
-            
         }else if(edadMeses < 0) {
             System.out.println("ERROR");
         }else if(edadAnios < 0){

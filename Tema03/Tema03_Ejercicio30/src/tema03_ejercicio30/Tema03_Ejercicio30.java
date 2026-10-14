@@ -40,7 +40,7 @@ public class Tema03_Ejercicio30 {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Error: Debes introducir un número entero. Contabilizado como intento.");
-                scanner.next(); // Limpia el buffer del scanner para evitar bucles infinitos
+                scanner.next(); 
             }
         }
     }
