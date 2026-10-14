@@ -13,11 +13,13 @@ public class Tema03_Ejercicio18 {
     /**
      * @param args the command line arguments
      */
+    
+    final static int CLAVE = 1234;
+    
     public static void main(String[] args) {
         Scanner contrasena = new Scanner(System.in);
         
         //Declaro e inicializo las variables
-        int contrCorrecta = 1234;
         int intento;
         int numIntentos = 0;
         
@@ -30,10 +32,10 @@ public class Tema03_Ejercicio18 {
             numIntentos++;
         
         //Declaración del while    
-        }while(numIntentos < 3 && intento != contrCorrecta);
+        }while(numIntentos < 3 && intento != CLAVE);
         
         //Compruebo si acertó o agotó los intentos
-        if(intento == contrCorrecta){
+        if(intento == CLAVE){
             System.out.println("Enhorabuena, has acertado la contraseña");
         }
         else{
