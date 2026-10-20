@@ -28,7 +28,10 @@ public class Tema04_Ejercicio07 {
         System.out.println("Introduzca el tercer número: ");
         int num3 = entrada.nextInt();
         
-        //Llamada al módulo Mayor(num1, num2, num3)
-        Operaciones.Orden(num1, num2, num3);
+        System.out.println("Introduzca el cuarto número: ");
+        int num4 = entrada.nextInt();
+        
+        //Llamada al módulo Orden(num1, num2, num3, num4)
+        Operaciones.Orden(num1, num2, num3, num4);
     }
 }
