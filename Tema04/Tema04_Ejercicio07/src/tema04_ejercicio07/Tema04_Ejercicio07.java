@@ -15,6 +15,7 @@ public class Tema04_Ejercicio07 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+       //Declaramos el Scanner
         Scanner entrada = new Scanner(System.in);
         
         //Solicitamos la entrada por teclado de los 3 números

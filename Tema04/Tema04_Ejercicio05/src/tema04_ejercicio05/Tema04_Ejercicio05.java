@@ -16,8 +16,10 @@ public class Tema04_Ejercicio05 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //Declaramos el Scanner
         Scanner entrada = new Scanner(System.in);
         
+        //Pedimos al usuario un número y lo recogemos en la variable
         System.out.println("Introduzca un número: ");
         int num = entrada.nextInt();
         

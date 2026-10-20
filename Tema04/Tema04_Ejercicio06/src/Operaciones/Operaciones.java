@@ -10,6 +10,11 @@ package Operaciones;
  */
 public class Operaciones {
     
+    /**
+     * Método que dada una nota introducida por un usuario, nos dice
+     * su calificación.
+     * @param nota 
+     */
     public static void Calificaciones(float nota){
         if(nota > 0 && nota < 5){
             System.out.println("Suspenso");

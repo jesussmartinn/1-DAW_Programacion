@@ -15,6 +15,7 @@ public class Tema04_Ejercicio04 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //Declaramos el Scanner
         Scanner entrada = new Scanner(System.in);
         
         //Solicitamos la entrada por teclado de los 3 números
@@ -28,7 +29,7 @@ public class Tema04_Ejercicio04 {
         System.out.println("Introduzca el tercer número: ");
         int num3 = entrada.nextInt();
         
-        //Llamada al módulo Mayor(num1, num2, num3)
+        //Llamada al módulo Menor(num1, num2, num3)
         Operaciones.Menor(num1, num2, num3);
     }
 }

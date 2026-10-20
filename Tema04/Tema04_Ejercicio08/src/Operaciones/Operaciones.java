@@ -10,6 +10,12 @@ package Operaciones;
  */
 public class Operaciones {
     
+    /**
+     * Método que dada una cantidad de dinero lo descomopone en el 
+     * número de billetes de 50, 20, 10, 5 y monedas de 2 y 1 correspondientes,
+     * sin mostrar los que no tengan 1 o más billetes/monedas
+     * @param dinero 
+     */
     public static void nBilletes(int dinero){
         int resto;
         

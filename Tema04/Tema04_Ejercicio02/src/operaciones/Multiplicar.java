@@ -9,6 +9,12 @@ package operaciones;
  * @author User
  */
 public class Multiplicar {
+    
+    /**
+     * Método que multiplica dos números dados por el usuario
+     * @param num1
+     * @param num2 
+     */
     public static void multiplicacion(int num1, int num2){
         System.out.println("La operación que se realizo es producto"
                 + " y el resultado es: " + (num1 * num2));

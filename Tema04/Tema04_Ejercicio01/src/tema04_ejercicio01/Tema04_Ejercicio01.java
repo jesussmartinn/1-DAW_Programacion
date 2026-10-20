@@ -10,7 +10,10 @@ import java.util.Scanner;
  */
 public class Tema04_Ejercicio01 {
     
-    
+    /**
+     * Método que resuelve su un número es positivo, negativo o es cero.
+     * @param num 
+     */
     public static void numerosEnteros(int num){
         if(num > 0){
             System.out.println("El número introducido es positivo");
@@ -25,11 +28,14 @@ public class Tema04_Ejercicio01 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //Declaramos el Scanner
         Scanner entrada = new Scanner(System.in);
         
+        //Pedimos al usuario un número por pantalla
         System.out.println("Introduce un número: ");
         int num = entrada.nextInt();
         
+        //Llamamos al método numerosEnteros(num)
         numerosEnteros(num);   
     }
     
