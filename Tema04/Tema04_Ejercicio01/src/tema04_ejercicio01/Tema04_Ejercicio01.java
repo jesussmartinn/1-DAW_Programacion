@@ -23,18 +23,28 @@ public class Tema04_Ejercicio01 {
             System.out.println("El número introducido es cero");
         }
     }
+    
+    /**
+     * Método que devuelve el número que introduzca el usuario por teclado
+     * @return 
+     */
+    public static int pedirNumero(){
+        //Declaramos el Scanner
+        Scanner entrada = new Scanner(System.in);
+        
+        //Pedimos al usuario un número por pantalla
+        System.out.println("Por favor, introduzca un número: ");
+        int num = entrada.nextInt();
+        
+        return num;
+    }
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //Declaramos el Scanner
-        Scanner entrada = new Scanner(System.in);
-        
-        //Pedimos al usuario un número por pantalla
-        System.out.println("Introduce un número: ");
-        int num = entrada.nextInt();
-        
+        //Llamamos al método pedirNumero()
+        int num = pedirNumero();
         //Llamamos al método numerosEnteros(num)
         numerosEnteros(num);   
     }

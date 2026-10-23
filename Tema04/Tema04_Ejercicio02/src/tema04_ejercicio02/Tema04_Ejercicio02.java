@@ -4,36 +4,41 @@
  */
 package tema04_ejercicio02;
 import java.util.Scanner;
-import operaciones.Multiplicar;
-import operaciones.Sumar;
+
 /**
  *
  * @author User
  */
 public class Tema04_Ejercicio02 {
 
+    
+    /**
+     * Método que devuelve el número que introduzca el usuario por teclado
+     * @return 
+     */
+    public static int pedirNumero(String mensaje){
+        //Declaramos el Scanner
+        Scanner entrada = new Scanner(System.in);
+        
+        //Pedimos al usuario dos número por pantalla
+        System.out.println(mensaje);
+        int num = entrada.nextInt();
+        
+        return num;
+    }
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //Declaramos el Scanner
-        Scanner entrada = new Scanner(System.in);
+        int num1 = pedirNumero("Por favor, introduzca el primer número: ");
+        int num2 = pedirNumero("Ahora, introduzca el segundo número: ");
         
-        //Pedimos dos valores al usuario y los recogemos en sus variables
-        System.out.println("Introduzca un número: ");
-        int num1 = entrada.nextInt();
-        
-        System.out.println("Introduzca el segundo número: ");
-        int num2 = entrada.nextInt();
-        
-        /**
-         * Realizamos la condición de si el primer número es mayor que 10
-         * se realiza la operación de multiplicar, sino se realiza la suma.
-         */
         if(num1 > 10){
-            Multiplicar.multiplicacion(num1, num2);
+            Operaciones.multiplica(num1,num2);
         }else{
-            Sumar.suma(num1, num2);
+            Operaciones.suma(num1, num2);
         }
     }
+    
 }
