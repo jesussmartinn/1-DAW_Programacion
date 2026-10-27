@@ -27,6 +27,9 @@ public class Tema04_Ejercicio15 {
         return num;
     }
     
+    /**
+     * Método que muestra el menú
+     */
     public static void mostrarMenu() {
         System.out.println();
         System.out.println("---- MENÚ ----");
@@ -37,18 +40,42 @@ public class Tema04_Ejercicio15 {
         System.out.println("5.- Salir del programa.");
     }
 
+    /**
+     * Método que realiza la suma de a y b
+     * @param a
+     * @param b
+     * @return 
+     */
     public static int sumar(int a, int b) {
         return a + b;
     }
 
+    /**
+     * Método que realiza la resta de a y b
+     * @param a
+     * @param b
+     * @return 
+     */
     public static int restar(int a, int b) {
         return a - b;
     }
 
+    /**
+     * Método que multiplica a y b
+     * @param a
+     * @param b
+     * @return 
+     */
     public static int multiplicar(int a, int b) {
         return a * b;
     }
 
+    /**
+     * Método que divide a y b
+     * @param a
+     * @param b
+     * @return 
+     */
     public static int dividir(int a, int b) {
         return a / b;
     }
@@ -57,11 +84,12 @@ public class Tema04_Ejercicio15 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //Declaro las variables 
         int num1 = pedirNumero("Introduzca el primer número: ");
         int num2 = pedirNumero("Introduzca el segundo número: ");
         int opcion;
         
-         do {
+        do {
             mostrarMenu();
             opcion = pedirNumero("Elija una opción: ");
 
@@ -88,7 +116,7 @@ public class Tema04_Ejercicio15 {
                 default:
                     System.out.println("Opción no válida.");
             }
+            
         } while (opcion != 5);
     }
-    
 }

@@ -16,8 +16,8 @@ public class Tema04_Ejercicio12 {
      * @param args the command line arguments
      */
     
-    private static final int CONTRASENA = 1234;
-    private static final int INTENTOS_MAX = 3;
+    public static final int CONTRASENA = 1234;
+    public static final int INTENTOS_MAX = 3;
     
     /**
      * Método que devuelve el número que introduzca el usuario por teclado
@@ -34,7 +34,7 @@ public class Tema04_Ejercicio12 {
         return contrasena;
     }
     
-    public static boolean comprueba(int contrasena){
+    public static boolean comprobar(int contrasena){
         boolean contrasenaCorrecta = false;
         if(contrasena == CONTRASENA){
             contrasenaCorrecta = true;
@@ -42,7 +42,7 @@ public class Tema04_Ejercicio12 {
         return contrasenaCorrecta;
     }
     
-    public static void muestraResultado(boolean acierto){
+    public static void mostrarResultado(boolean acierto){
         if(acierto){
             System.out.println("¡Enhorabuena! Contraseña correcta.");
         }else{
@@ -53,16 +53,16 @@ public class Tema04_Ejercicio12 {
     public static void main(String[] args) {
         boolean acierto = false;
         int intentos = 0;
-        
-        while(!acierto && intentos < INTENTOS_MAX){
-            acierto  = comprueba(pedirContrasena());
+        //DO WHILE más óptimo aquí que WHILE
+        do{
+            acierto  = comprobar(pedirContrasena());
             intentos++;
             if(!acierto && intentos < INTENTOS_MAX){
                 System.out.println("Contraseña incorrecta. Te quedan " + (INTENTOS_MAX - intentos) + " intentos.");
             }
-        }
+        }while(!acierto && intentos < INTENTOS_MAX);
         
-        muestraResultado(acierto);
+        mostrarResultado(acierto);
     }
     
 }

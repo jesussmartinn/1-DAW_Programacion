@@ -27,14 +27,14 @@ public class Tema04_Ejercicio14 {
         return num;
     }
     
-    public static boolean esMayorQueCero(int numero) {
-        return numero > 0;
+    public static boolean esMayorQueCero(int num) {
+        return num > 0;
     }
 
-    public static void muestraMultiplosDeTres(int limite) {
+    public static void mostrarResultado(int num) {
         int total = 0;
-        System.out.println("Múltiplos de 3 entre 1 y " + limite + ":");
-        for (int i = 1; i <= limite; i++) {
+        System.out.println("Múltiplos de 3 entre 1 y " + num + ":");
+        for (int i = 1; i <= num; i++) {
             if (i % 3 == 0) {
                 System.out.println(i);
                 total++;
@@ -47,12 +47,16 @@ public class Tema04_Ejercicio14 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int num = pedirNumero();
-        while (!esMayorQueCero(num)) {
-            System.out.println("Error: el número debe ser mayor que 0.");
+        int num;
+        
+        do{
             num = pedirNumero();
-        }
-        muestraMultiplosDeTres(num);
+            if(esMayorQueCero(num)){
+                mostrarResultado(num);
+            }else{
+                System.out.println("Error: el número debe ser mayor que 0.");
+            }
+            
+        }while (!esMayorQueCero(num));
     }
-    
 }

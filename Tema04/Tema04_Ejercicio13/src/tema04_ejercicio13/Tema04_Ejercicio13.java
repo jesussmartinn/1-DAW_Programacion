@@ -48,14 +48,12 @@ public class Tema04_Ejercicio13 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int num = pedirNumero();
-        
-        while(!esMayorQueUno(num)){
-            System.out.println("Error: el número debe ser mayor que 1.");
+        int num;
+        do{
             num = pedirNumero();
-        }
+            System.out.println("Error: el número debe ser mayor que 1.");
+        }while(!esMayorQueUno(num));
 
         mostrarNumeros(num);
     }
-    
 }

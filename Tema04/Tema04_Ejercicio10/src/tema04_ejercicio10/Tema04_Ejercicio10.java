@@ -32,7 +32,7 @@ public class Tema04_Ejercicio10 {
     
     public static void tabla(int num){
         int res;
-        for(int i = 0; i<11; i++){
+        for(int i = 0; i <= 10; i++){
             res = num * i;
             System.out.println(num + " * " + i + " = " + res);
         }
