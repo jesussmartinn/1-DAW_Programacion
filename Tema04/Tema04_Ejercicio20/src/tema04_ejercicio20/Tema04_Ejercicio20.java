@@ -38,7 +38,7 @@ public class Tema04_Ejercicio20 {
     }
     
     /**
-     * Método que realiza la pregunta 1 y comprueba si la respuesta es correcta 
+     * Método que realiza la pregunta 2 y comprueba si la respuesta es correcta 
      * o no y añade su nota correspondiente.
      * @return 
      */

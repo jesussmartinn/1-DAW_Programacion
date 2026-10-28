@@ -49,7 +49,7 @@ public class Tema04_Ejercicio17 {
             if(letra == secreta){
                 System.out.println("Enhorabuena, has acertado la letra");
                 buscar = true;
-                cont++;
+                
             }else{
                 if(letra < secreta){
                     System.out.println("La letra correcta está después.");
@@ -57,7 +57,7 @@ public class Tema04_Ejercicio17 {
                     System.out.println("La letra correcta está antes.");
                 }
                 System.out.println("Sigue intentando: ");
-                cont++;
+                
             }
         }while(!buscar);
         
