@@ -25,19 +25,28 @@ public class Tema04_Ejercicio26 {
         return num;
     }
     
-    
+    /**
+     * Método que devuelve si un número es primo o no
+     * @param num
+     * @return 
+     */
     public static Boolean esPrimo(int num){
       
+        //Si el número es menor que dos, devuelve false directamente
         if(num < 2){
             return false;
         }
         
+        //Si encuentra un número que se pueda dividir entonces ya no es un
+        //número primo, se devueve false
         for(int i = 2; i < num; i++){
             if(num % i == 0){
                 return false;
             }
         }
         
+        //Si no encuentra ningun número que se pueda dividir entonces es un
+        //número primo, se devuelve true
         return true;
     }
     

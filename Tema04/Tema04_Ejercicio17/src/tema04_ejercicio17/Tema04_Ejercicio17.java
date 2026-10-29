@@ -33,7 +33,10 @@ public class Tema04_Ejercicio17 {
     }
     
     /**
-     * Método que realiza todas las operaciones del juego
+     * Método que realiza todas las operaciones del juego:
+     * Genera una letra aleatoria, pide al usuario una letra, compara que haya 
+     * acertado la letra y sino le dice si la letra correcta está antes o después 
+     * de la letra que ha escrito el usuario
      * @return 
      */
     public static boolean juego(){

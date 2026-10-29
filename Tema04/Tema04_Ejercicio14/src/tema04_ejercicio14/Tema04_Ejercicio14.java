@@ -27,10 +27,19 @@ public class Tema04_Ejercicio14 {
         return num;
     }
     
+    /**
+     * Método que devuelve si un número es mayor que cero o no
+     * @param num
+     * @return 
+     */
     public static boolean esMayorQueCero(int num) {
         return num > 0;
     }
 
+    /**
+     * Método que muestra el resultado final
+     * @param num 
+     */
     public static void mostrarResultado(int num) {
         int total = 0;
         System.out.println("Múltiplos de 3 entre 1 y " + num + ":");
