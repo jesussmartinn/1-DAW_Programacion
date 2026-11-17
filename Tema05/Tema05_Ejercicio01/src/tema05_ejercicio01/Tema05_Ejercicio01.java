@@ -28,11 +28,21 @@ public class Tema05_Ejercicio01 {
         cochePadre.setModelo("X1");
         cochePadre.setColor("Blanco");
         
+        //ESTADO ANTES DE LAS OPERACIONES
+        System.out.println("Estado de ambos coches antes de las operaciones: ");
+        miCoche.obtenerEstado();
+        cochePadre.obtenerEstado();
+        
         //Operaciones
         miCoche.acelerarCoche(5);
         miCoche.frenarCoche(2);
+        cochePadre.acelerarCoche(3);
+        cochePadre.apagarCoche(Boolean.TRUE, 0);
         
-        
+        //ESTADO DESPUES DE LAS OPERACIONES
+        System.out.println("Estado de ambos coches después de las operaciones: ");
+        miCoche.obtenerEstado();
+        cochePadre.obtenerEstado();
     } 
     
 }

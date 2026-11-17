@@ -4,6 +4,8 @@
  */
 package tema05_ejercicio01;
 
+import java.util.Scanner;
+
 /**
  *
  * @author User
@@ -59,21 +61,38 @@ public class Coche {
     
     //Métodos
     
-    public void establecerMarca(String m){
-        marca = m;
+    public String establecerMarca(String m){
+        Scanner entrada = new Scanner(System.in);
+        
+        System.out.println("Introduzca la marca del coche: ");
+        m = entrada.nextLine();
+        
+        return m;
     }
     
-    public void establecerModelo(String md){
-        modelo = md;
+    public String establecerModelo(String md){
+       Scanner entrada = new Scanner(System.in);
+        
+        System.out.println("Introduzca el modelo del coche: ");
+        md = entrada.nextLine();
+        
+        return md;
     }
     
-    public void establecerColor(String c){
-        color = c;
+    public String establecerColor(String c){
+        Scanner entrada = new Scanner(System.in);
+        
+        System.out.println("Introduzca el color del coche: ");
+        c = entrada.nextLine();
+        
+        return c;
     }
     
     public void arrancarCoche(Boolean motorEncendido,int velocidad){
         motorEncendido = true;
         velocidad = 10;
+        
+        System.out.println("El motor esta encendido.");
     }
     
     public void apagarCoche(Boolean motorEncendido,int velocidad){
@@ -83,21 +102,22 @@ public class Coche {
     
     public void acelerarCoche(int velocidad){
         velocidad = velocidad + 20;
+        
+        System.out.println("La velocidad actual es: " + velocidad);
     }
     
     public void frenarCoche(int velocidad){
         if(velocidad > 0){
             velocidad = velocidad - 6;
+            System.out.println("La velocidad actual es: " + velocidad);
         }else{
             System.out.println("El coche no esta encendido");
         }
     }
     
     public void obtenerEstado(){
-        getMarca();
-        getModelo();
-        getColor();
-        getVelocidad();
-        getMotorEncendido();
+        System.out.println("Marca: " + getMarca() + " - Modelo: " + getModelo() + 
+                " - Color: " + getColor() + " - Velocidad: " + getVelocidad() + 
+                " - Motor encendido: " + getMotorEncendido());
     }
 }
