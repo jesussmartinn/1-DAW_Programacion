@@ -8,7 +8,7 @@ package tema05_ejercicio01;
  *
  * @author User
  */
-public class Tema05_Ejercicio01 {
+public class Test {
 
     /**
      * @param args the command line arguments
@@ -27,20 +27,17 @@ public class Tema05_Ejercicio01 {
         cochePadre.setMarca("BMW");
         cochePadre.setModelo("X1");
         cochePadre.setColor("Blanco");
-        
-        //ESTADO ANTES DE LAS OPERACIONES
-        System.out.println("Estado de ambos coches antes de las operaciones: ");
-        miCoche.obtenerEstado();
-        cochePadre.obtenerEstado();
-        
+          
         //Operaciones
+        System.out.println("---OPERACIONES---");
+        //Esto se debe hacer con el for, no asignarle un 5.
         miCoche.acelerarCoche(5);
         miCoche.frenarCoche(2);
         cochePadre.acelerarCoche(3);
         cochePadre.apagarCoche(Boolean.TRUE, 0);
         
-        //ESTADO DESPUES DE LAS OPERACIONES
-        System.out.println("Estado de ambos coches después de las operaciones: ");
+        //ESTADO DE AMBOS COCHES
+        System.out.println("---ESTADO DE AMBOS COCHES---");
         miCoche.obtenerEstado();
         cochePadre.obtenerEstado();
     } 

@@ -11,6 +11,7 @@ import java.util.Scanner;
  * @author User
  */
 public class Coche {
+    //ATRIBUTOS
     private String marca;
     private String modelo;
     private String color;

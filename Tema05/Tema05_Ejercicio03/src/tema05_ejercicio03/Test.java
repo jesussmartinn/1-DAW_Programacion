@@ -8,7 +8,7 @@ package tema05_ejercicio03;
  *
  * @author User
  */
-public class Tema05_Ejercicio03 {
+public class Test {
 
     /**
      * @param args the command line arguments
@@ -31,6 +31,7 @@ public class Tema05_Ejercicio03 {
         Coche coche3 = new Coche();
         
         //Establecemos la marca y el modelo de los 3 coches
+       
         //Coche 1
         coche1.setMarca("Audi");
         coche1.setModelo("RS3");
