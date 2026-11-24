@@ -20,7 +20,13 @@ public class Asignatura {
         this.nombre = "";
         this.nota = 0.0;
     }
-    //Constructor parametrizado: asignoel nombre al crear el objeto
+    //Constructor parametrizado
+    public Asignatura(String nombre, double nota){
+        this.nombre = nombre;
+        this.nota = nota;
+    }
+    
+    //Asigno el nombre al crear el objeto
     public Asignatura(String nombre){
         this.nombre = nombre;
     }
@@ -34,7 +40,6 @@ public class Asignatura {
         this.nota = nota;
     }
     
-    //Método que devuelve la nota de la asignatura
     public double getNota(){
         return nota;
     }

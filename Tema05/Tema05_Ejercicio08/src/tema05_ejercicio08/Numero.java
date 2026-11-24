@@ -34,4 +34,5 @@ public class Numero {
         this.valor = valor;
     }
     
+    //To String---> FALTA
 }

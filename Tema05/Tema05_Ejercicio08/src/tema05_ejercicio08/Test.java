@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class Test {
     
-    //Método que pide un número y lo retorna
+    //Método que pide un número y lo devuelve
     public static int pedirNumero(){
         Scanner teclado = new Scanner(System.in);
         int num;
@@ -25,7 +25,7 @@ public class Test {
     
     //Método que recibe un objeto Numero y dice si su valor es par o impar
     public static void mostrarParidad(Numero numero){
-        if  ((numero.getValor() % 2) == 0){
+        if((numero.getValor() % 2) == 0){
             System.out.println("El número " + numero.getValor() + " es par");
         }
         else{
@@ -46,7 +46,7 @@ public class Test {
         //Creamos el objeto con el número introducido como valor
         numero = new Numero(n);
         
-        //Le paso el objeto al método
+        //Vemos si es par o impar
         mostrarParidad(numero);
     }
     

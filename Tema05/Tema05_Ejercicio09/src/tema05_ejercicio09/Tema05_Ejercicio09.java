@@ -27,7 +27,7 @@ public class Tema05_Ejercicio09 {
     public static Numero mayorDeDos(Numero a, Numero b){
         Numero mayor;
         
-        if  (a.getValor() > b.getValor()){
+        if(a.getValor() > b.getValor()){
             mayor = a;
         }
         else{

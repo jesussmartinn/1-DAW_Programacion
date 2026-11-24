@@ -24,7 +24,8 @@ public class Tema05_Ejercicio05 {
     }
 
     //Método que recibe las 6 notas y devuelve la nota media
-    public static double calcularMedia(double n1, double n2, double n3, double n4, double n5, double n6) {
+    public static double calcularMedia(double n1, double n2, double n3, double n4,
+            double n5, double n6) {
         double media;
 
         media = (n1 + n2 + n3 + n4 + n5 + n6) / 6;
